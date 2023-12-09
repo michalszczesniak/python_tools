@@ -12,7 +12,7 @@ def merge():
             input_images.append(cv2.imread(path+ '/' + files[i]))
     if input_images:  
         im_h = cv2.hconcat(input_images)
-        cv2.imwrite('bajlando.jpg', im_h)
+        cv2.imwrite('mergedimage.jpg', im_h)
     else:
         print('There are no files to merge')
 
